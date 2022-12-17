@@ -16,7 +16,7 @@ const AdvantagesList = () => {
       {
         advantages
           .map(({gradientStyle, topText, middleText, span, bottomText}) => {
-            return <AdvantageItem gradientStyle={gradientStyle} topText={topText} middleText={middleText} span={span} bottomText={bottomText} />
+            return <AdvantageItem key={topText} gradientStyle={gradientStyle} topText={topText} middleText={middleText} span={span} bottomText={bottomText} />
       })
       }
     </div>
