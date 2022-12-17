@@ -1,0 +1,77 @@
+$corner-border: 1px solid white;
+$header-height: 10rem;
+
+.Header {
+  height: $header-height;
+  background: transparent;
+  z-index: 1;
+  border-bottom: .1rem solid rgba(#989393, .21);
+  &__wrapper {
+    height: $header-height;
+  }
+  &.isFixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+.Logo {
+  padding: 2.7rem 2.7rem;
+  width: 30rem;
+  height: 100%;
+  border: .1rem solid rgba(#989393, .21);
+  position: relative;
+  img {
+    width: 27.4rem;
+    height: 3.4rem;
+  }
+  &__corner {
+    position: absolute;
+    width: .7rem;
+    height: .7rem;
+    &_lt {
+      border-top: $corner-border;
+      border-left: $corner-border;
+      top: 0;
+      left: 0;
+      right: auto;
+    }
+    &_rt {
+      border-top: $corner-border;
+      border-right: $corner-border;
+      top: 0;
+      right: 0;
+    }
+    &_lb {
+      border-bottom: $corner-border;
+      border-left: $corner-border;
+      bottom: 0;
+      left: 0;
+    }
+    &_rb {
+      border-right: $corner-border;
+      border-bottom: $corner-border;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.MenuList {
+  display: flex;
+  a {
+    &.active {
+      pointer-events: none;
+      div {
+        color: red;
+        line-height: 2.2rem;
+        text-transform: capitalize;
+        &:hover {
+          color: #b1b1b1;
+        }
+      }
+    }
+  }
+}

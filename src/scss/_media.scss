@@ -1,0 +1,97 @@
+@media screen and (max-width: 1220px) {
+  .title {
+    &__name {
+      font-size: 4.3rem;
+      margin-left: -.6rem;
+    }
+  }
+
+  .home {
+    //flex-direction: column;
+    //align-items: center;
+  }
+
+  .advantages {
+    flex-direction: column;
+    padding-top: 0;
+    padding-right: 3rem;
+    align-items: flex-end;
+  }
+
+  .block {
+    padding: 0;
+    height: 11rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__name {
+      text-align: center;
+      margin-bottom: 4rem;
+      clip-path: none;
+    }
+  }
+
+  .MenuList {
+    display: none;
+  }
+
+  .sandwich_btn {
+    display: block;
+  }
+
+  .Logo {
+    padding: 0 2.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advantages {
+    flex-direction: row;
+    padding-top: 5rem;
+    padding-right: 0;
+    gap: 4rem;
+    width: 41rem;
+  }
+
+  .block {
+    height: 18.5rem;
+    padding: 4rem 0;
+  }
+
+  .rocket-line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .advantages {
+    width: 32rem;
+    padding: 4rem 1rem;
+    justify-content: space-between;
+  }
+
+  .block {
+    width: 12rem;
+    &__middle-text {
+      font-size: 3.5rem;
+    }
+  }
+
+  .title {
+    &__name {
+      font-size: 4rem;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.ui-html {
+  font-size: 62.5%;
+}
+
+.ui-body {
+  font-size: 1.6rem;
+  font-family: 'MuseoSansCyrl', serif;
+}
+
+.ui-body {
+  --ui-primary-color: #ffff !important;
+}
+
+.ui-button {
+  pointer-events: auto !important;
+}
+
+.app-bg {
+  background: url("../assets/img/main-bg.png") top center no-repeat;
+}
+
+// helpers
+@import './helpers/helpers';
+
+// fonts
+@import "./fontsScss/fonts";
+
+// sandwich
+@import "./sandwich";
+
+// media
+@import "./media";
+
+

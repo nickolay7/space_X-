@@ -1,0 +1,61 @@
+$alpha: .03;
+
+.advantages {
+  padding-top: 5rem;
+  width: 38rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.block {
+  width: 18.5rem;
+  height: 18.5rem;
+  padding: 4rem 0;
+  text-align: center;
+  color: white;
+  &__top-text {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+    font-weight: 100;
+  }
+  &__middle-text {
+    font-size: 6rem;
+    line-height: 5rem;
+    font-weight: 700;
+  }
+  &__bottom-text {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  &_1 {
+    background-image: radial-gradient(at bottom right, rgba(white, $alpha), rgba(black, $alpha));
+    &:hover {
+      background-image: radial-gradient(at bottom right, rgba(white, .2), rgba(black, $alpha));
+    }
+  }
+  &_2 {
+    background-image: radial-gradient(at bottom left, rgba(white, $alpha), rgba(black, $alpha));
+    &:hover {
+      background-image: radial-gradient(at bottom left, rgba(white, .2), rgba(black, $alpha));
+    }
+  }
+  &_3 {
+    background-image: radial-gradient(at top right, rgba(white, $alpha), rgba(black, $alpha));
+    &:hover {
+      background-image: radial-gradient(at top right, rgba(white, .2), rgba(black, $alpha));
+    }
+    span {
+      font-size: 2rem;
+      line-height: 2rem;
+      font-weight: 700;
+    }
+  }
+  &_4 {
+    background-image: radial-gradient(at top left, rgba(white, $alpha), rgba(black, $alpha));
+    &:hover {
+      background-image: radial-gradient(at top left, rgba(white, .2), rgba(black, $alpha));
+    }
+  }
+}

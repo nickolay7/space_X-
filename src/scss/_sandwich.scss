@@ -1,0 +1,66 @@
+@mixin btn_sandwich {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: .25s;
+}
+
+.sandwich_btn {
+  width: 26px;
+  height: 10px;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  display: none;
+}
+
+.sandwich_items {
+  @include btn_sandwich;
+
+  &:after {
+    @include btn_sandwich;
+    content: "";
+    //transform: translateY(8px);
+    top: 6px;
+  }
+
+  &:before {
+    @include btn_sandwich;
+    content: "";
+    //transform: translateY(20px);
+    top: -6px;
+  }
+}
+
+#sandwich_toggle {
+  opacity: 0;
+  position: absolute;
+}
+
+#sandwich_toggle:checked ~ .sandwich_btn > span {
+  transform: rotate(45deg);
+}
+
+#sandwich_toggle:checked ~ .sandwich_btn > span:before {
+  top: 0;
+  transform: rotate(0);
+  background-color: white;
+}
+
+#sandwich_toggle:checked ~ .sandwich_btn > span:after {
+  top: 0;
+  transform: rotate(90deg);
+  background-color: white;
+}
+
+#sandwich_toggle:checked ~ nav {
+  left: 0;
+}
+
+#sandwich_toggle:checked ~ nav .menu_item {
+  display: block;
+}

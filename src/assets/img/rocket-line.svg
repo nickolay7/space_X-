@@ -1,0 +1,11 @@
+<svg xmlns='http://www.w3.org/2000/svg' height="57px" width="407px">
+  <defs>
+    <linearGradient id="Gradient2" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="black" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="white"/>
+    </linearGradient>
+  </defs>
+  <polyline points="0, 0 70, 54 401, 53"
+            style="fill:none;stroke-width:1;stroke:url(#Gradient2)"/>
+  <circle cx="403" cy="53" r="3" stroke="white" stroke-width="1" fill="black"/>
+</svg>
